@@ -1,0 +1,60 @@
+products:
+  '1:0':
+    min-price: 0.1
+    max-price: 1
+    category: "MINING"
+
+  '1:1':
+    min-price: 0.1
+    max-price: 1
+    category: "MINING"
+
+  '391:0':
+    min-price: 0.1
+    max-price: 1
+    category: "FARMING"
+
+  '392:0':
+    min-price: 0.1
+    max-price: 1
+    category: "FARMING"
+
+  '349:0':
+    min-price: 0.1
+    max-price: 1
+    category: "FISHING"
+
+  '349:1':
+    min-price: 0.1
+    max-price: 1
+    category: "FISHING"
+
+  '17:0':
+    min-price: 0.1
+    max-price: 1
+    category: "WOODCUTTING"
+
+  '17:2':
+    min-price: 0.1
+    max-price: 1
+    category: "WOODCUTTING"
+
+  '367:0':
+    min-price: 0.1
+    max-price: 1
+    category: "MOB_LOOTING"
+
+  '352:0':
+    min-price: 0.1
+    max-price: 1
+    category: "MOB_LOOTING"
+
+  '363:0':
+    min-price: 0.1
+    max-price: 1
+    category: "HUNTING"
+
+  '365:0':
+    min-price: 0.1
+    max-price: 1
+    category: "HUNTING"
