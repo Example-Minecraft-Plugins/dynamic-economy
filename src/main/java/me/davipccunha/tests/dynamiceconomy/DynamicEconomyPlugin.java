@@ -3,7 +3,7 @@ package me.davipccunha.tests.dynamiceconomy;
 import lombok.Getter;
 import me.davipccunha.tests.dynamiceconomy.cache.ProductCache;
 import me.davipccunha.tests.dynamiceconomy.command.UpdateCommand;
-import me.davipccunha.tests.dynamiceconomy.listener.PlayerInteractListener;
+import me.davipccunha.tests.dynamiceconomy.listener.AdminShopBuyListener;
 import me.davipccunha.tests.signshop.api.model.SignShopAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -28,7 +28,7 @@ public class DynamicEconomyPlugin extends JavaPlugin {
     private void init() {
         saveDefaultConfig();
         registerListeners(
-                new PlayerInteractListener(this)
+                new AdminShopBuyListener(this)
         );
         registerCommands();
 
