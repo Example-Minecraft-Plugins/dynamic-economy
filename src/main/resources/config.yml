@@ -1,3 +1,5 @@
+# Product's min-price and max-price does not represent the absolute minimal and maximal price, but rather
+# how much the price can vary from the base price in relation to other products in the same category.
 products:
   '1:0':
     min-price: 0.1
