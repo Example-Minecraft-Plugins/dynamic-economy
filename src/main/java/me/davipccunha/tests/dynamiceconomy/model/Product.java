@@ -49,4 +49,9 @@ public class Product {
         Product product = (Product) obj;
         return product.minPrice == this.minPrice && product.maxPrice == this.maxPrice && product.economyGroup == this.economyGroup;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d:%d - $%.2f", id, data, buyPrice);
+    }
 }

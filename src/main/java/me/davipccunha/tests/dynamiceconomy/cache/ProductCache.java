@@ -138,6 +138,6 @@ public class ProductCache {
     }
 
     public void updateProductsPrice(EconomyGroup economyGroup) {
-        ProductsPriceUpdater.updateProductsPrice(this, economyGroup);
+        ProductsPriceUpdater.updateProductsPrice(this, economyGroup, true);
     }
 }
