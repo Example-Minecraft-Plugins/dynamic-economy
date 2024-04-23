@@ -13,7 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 @Getter
 public class DynamicEconomyPlugin extends JavaPlugin {
     private SignShopAPI signShopAPI;
-    private final ProductCache productCache = new ProductCache();
+    private ProductCache productCache;
 
     @Override
     public void onEnable() {
@@ -31,6 +31,7 @@ public class DynamicEconomyPlugin extends JavaPlugin {
                 new AdminShopBuyListener(this)
         );
         registerCommands();
+        loadCaches();
 
         signShopAPI = Bukkit.getServicesManager().load(SignShopAPI.class);
 
@@ -46,5 +47,9 @@ public class DynamicEconomyPlugin extends JavaPlugin {
 
     private void registerCommands() {
         this.getCommand("update").setExecutor(new UpdateCommand(this));
+    }
+
+    private void loadCaches() {
+        this.productCache = new ProductCache();
     }
 }

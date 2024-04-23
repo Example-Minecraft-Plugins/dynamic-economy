@@ -9,6 +9,7 @@ import me.davipccunha.tests.dynamiceconomy.util.ObjectSerializer;
 import me.davipccunha.tests.signshop.api.model.Shop;
 import me.davipccunha.tests.signshop.api.model.ShopLocation;
 import me.davipccunha.tests.signshop.api.model.SignShopAPI;
+import me.davipccunha.utils.cache.RedisConnector;
 import org.bukkit.configuration.file.FileConfiguration;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 
 @NoArgsConstructor
 public class ProductCache {
-    private final RedisConnector redisConnector = new RedisConnector("localhost", 6379, "davi123");
+    private final RedisConnector redisConnector = new RedisConnector();
 
     public void add(int id, short data, Product product) {
         try (Jedis jedis = redisConnector.getJedis()) {

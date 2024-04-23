@@ -23,6 +23,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.28")
     annotationProcessor("org.projectlombok:lombok:1.18.28")
     implementation("redis.clients:jedis:5.2.0-beta1")
+    compileOnly(fileTree("D:\\Local Minecraft Server\\plugins") { include("bukkit-utils.jar") })
 }
 
 tasks.withType<JavaCompile> {
