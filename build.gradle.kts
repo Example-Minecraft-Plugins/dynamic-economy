@@ -50,9 +50,9 @@ bukkit {
     softDepend = listOf("sign-shop")
 
     commands {
-        register("update") {
-            description = "Updates everything's prices."
-            permission = "update.command"
+        register("dynamiceconomy") {
+            description = "Força a atualização de todos os preços"
+            aliases = listOf("de")
         }
     }
 }

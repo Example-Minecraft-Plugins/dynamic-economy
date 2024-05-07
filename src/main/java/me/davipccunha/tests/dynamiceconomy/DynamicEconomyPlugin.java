@@ -2,7 +2,7 @@ package me.davipccunha.tests.dynamiceconomy;
 
 import lombok.Getter;
 import me.davipccunha.tests.dynamiceconomy.cache.ProductCache;
-import me.davipccunha.tests.dynamiceconomy.command.UpdateCommand;
+import me.davipccunha.tests.dynamiceconomy.command.DynamicEconomyCommand;
 import me.davipccunha.tests.dynamiceconomy.listener.AdminShopBuyListener;
 import me.davipccunha.tests.signshop.api.model.SignShopAPI;
 import org.bukkit.Bukkit;
@@ -46,7 +46,7 @@ public class DynamicEconomyPlugin extends JavaPlugin {
     }
 
     private void registerCommands() {
-        this.getCommand("update").setExecutor(new UpdateCommand(this));
+        this.getCommand("dynamiceconomy").setExecutor(new DynamicEconomyCommand(this));
     }
 
     private void loadCaches() {
