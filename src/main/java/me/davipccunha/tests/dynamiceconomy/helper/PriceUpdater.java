@@ -7,7 +7,7 @@ import me.davipccunha.tests.dynamiceconomy.model.Product;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-public class PriceUpdater {
+public abstract class PriceUpdater {
     protected static Collection<Product> getFilteredProducts(ProductCache cache, EconomyGroup economyGroup) {
         return cache.getProducts().stream()
                 .filter(product -> product.getEconomyGroup() == economyGroup).collect(Collectors.toList());

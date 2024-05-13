@@ -13,7 +13,7 @@ import org.bukkit.event.Listener;
 public class AdminShopBuyListener implements Listener {
     private final DynamicEconomyPlugin plugin;
 
-    @EventHandler(priority = EventPriority.NORMAL)
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     private void onAdminShopBuy(AdminShopBuyEvent event) {
         final ProductCache cache = plugin.getProductCache();
 

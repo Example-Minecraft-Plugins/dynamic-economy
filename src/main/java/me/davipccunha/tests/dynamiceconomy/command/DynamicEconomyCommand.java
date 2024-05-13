@@ -19,7 +19,7 @@ public class DynamicEconomyCommand implements CommandExecutor {
         }
 
         if (args.length == 0 || !args[0].equals("update")) {
-            commandSender.sendMessage("§cUso correto: /de update");
+            commandSender.sendMessage("§cUso: /de update");
             return false;
         }
 
